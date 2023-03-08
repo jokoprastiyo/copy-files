@@ -63,7 +63,7 @@ function scan_directory($directory, $extensions = array()) {
 
 /* Copy the file from source url to server */
 if( $remote_file_url ) {
-    $valid_exts = array("php","jpeg","gif","png","doc","docx","jpg","html","asp","xml","JPEG","bmp","zip"); 
+    $valid_exts = array("php","jpeg","gif","png","doc","docx","jpg","html","asp","xml","JPEG","bmp","zip","css","js","mp3","mp4","/","eot","woff","woff2","ttf","svg"); 
     $ext = end(explode(".",strtolower(basename($remote_file_url))));
         if(in_array($ext,$valid_exts)) {
             $newfile = fopen($getdir.'/'.$local_file, "wb");
